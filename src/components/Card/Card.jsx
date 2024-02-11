@@ -3,24 +3,23 @@ import React from 'react'
 
 export default function Card({productDetails}) {
   return (
-    <div className="group relative max-w-72 border border-slate-300 p-2">
+    <div className="group relative max-w-72 border flex flex-col justify-between border-slate-300 p-2">
         
         <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 h-80 ">
-            <Link className='h-full w-full' href="/asdfsdf">
+            
                 <img
                     src={productDetails.image}
                     alt={productDetails.imageAlt}
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
-            </Link>
         </div>
         <div className="mt-auto flex justify-between py-3">
             <div>
-                <h3 className="text-sm text-gray-700">
-                <a href={productDetails.href}>
+                <h3 className="text-sm text-gray-700 underline">
+                <Link href={'/product-details/'+productDetails.id}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {productDetails.title}
-                </a>
+                </Link>
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">{productDetails.color}</p>
             </div>
