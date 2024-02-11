@@ -14,25 +14,23 @@ export default function Registration() {
     const [userData, setUserData] = useState({})
 
 
-
+    const submitData = async() => {
+        console.log(userData)
+    }
     
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="w-96" >
-          {/* {
-            !userLoading ? userDetails["name"] : ""
-          } */}
+      <div className="" >
+
           <Form title="User Registration" >
             
               <label className="block">
-                  <FormInput changedValue={(name) => setUserData({...userData, "name":name })} type="text" label="name" errorMsg={error["name"]} placeholder="Edit your name"/>
+                  <FormInput changedValue={(phone_number) => setUserData({...userData, "phone_number":phone_number })} type="number" label="phone" placeholder="Enter your phone" />
               </label>
 
               <label className="block">
-                  <FormInput changedValue={(phone_number) => setUserData({...userData, "phone_number":phone_number })} type="number" label="phone" placeholder="Edit your phone no" />
+                  <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Enter your password"/>
               </label>
-
-
               
 
               
