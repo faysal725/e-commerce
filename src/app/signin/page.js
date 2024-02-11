@@ -22,7 +22,7 @@ export default function Login() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="" >
 
-          <Form title="User Registration" >
+          <Form title="User Login" >
             
               <label className="block">
                   <FormInput changedValue={(phone_number) => setUserData({...userData, "phone_number":phone_number })} type="number" label="phone" placeholder="Enter your phone" />

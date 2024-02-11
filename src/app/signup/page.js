@@ -16,6 +16,7 @@ export default function Registration() {
 
     const submitData = async() => {
         console.log(userData)
+        await postData(JSON.stringify(userData))
     }
     
   return (
@@ -32,7 +33,10 @@ export default function Registration() {
                   <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Enter your password"/>
               </label>
               
-
+              
+              <label className="block">
+                  <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Re-Enter your password"/>
+              </label>
               
               <PrimaryBtn clickHandler={() => submitData()} title="Submit" />
           </Form>
