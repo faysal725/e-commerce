@@ -6,7 +6,7 @@ import Dropdown from '@/components/Inputs/Dropdown'
 import PrimaryBtn from '@/components/Button/PrimaryBtn'
 import Form from '@/components/Form/Form'
 import usePost from '@/hooks/usePosts'
-import CommonLayout from '../commonLayout'
+import CommonLayout from '../CommonLayout'
 
 
 export default function Login() {

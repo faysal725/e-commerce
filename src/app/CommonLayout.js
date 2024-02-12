@@ -13,7 +13,6 @@ export default function CommonLayout({ children }) {
     allProducts:[],
     totalCost:0, 
   })
-  // <CartContext.Provider value={{}}></CartContext.Provider>
   
 
   useEffect(() => {
@@ -88,7 +87,7 @@ export default function CommonLayout({ children }) {
 
 
   return (
-    <CartContext.Provider value={{product, setProduct}}>
+    <CartContext.Provider value={{product, setProduct, totalInfo}}>
         <Navbar />
 
           <div className='pb-28'>

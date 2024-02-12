@@ -17,9 +17,7 @@ export default function Card({productDetails}) {
       } = useContext(CartContext);
       
     const addToCart = async() => {
-        console.log(productDetails)
         setProduct(productDetails)
-        // await postData(JSON.stringify(userData))
     }
 
 

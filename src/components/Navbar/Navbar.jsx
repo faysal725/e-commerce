@@ -53,10 +53,10 @@ export default function Navbar() {
                   </Link>
 
                   <Link
-                    href="#"
+                    href="/cart"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
-                    About
+                    Cart
                   </Link>
                   
                 </div>
