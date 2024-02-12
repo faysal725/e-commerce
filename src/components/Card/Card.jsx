@@ -34,11 +34,9 @@ export default function Card({productDetails}) {
         </div>
         <div className="mt-auto flex justify-between py-3">
             <div>
-                <h3 className="text-sm text-gray-700 underline">
-                {/* <Link href={'/product-details/'+productDetails.id}>
+                <h3 className="text-sm text-gray-700 ">
                     <span aria-hidden="true" className="absolute inset-0" />
                     {productDetails.title}
-                </Link> */}
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">{productDetails.color}</p>
             </div>
