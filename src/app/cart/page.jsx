@@ -168,44 +168,7 @@ const products = [
     imageAlt: 'Insulated bottle with white base and black snap lid.',
   },
 ]
-const relatedProducts = [
-  {
-    id: 1,
-    name: 'Billfold Wallet',
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-related-product-01.jpg',
-    imageAlt: 'Front of Billfold Wallet in natural leather.',
-    price: '$118',
-    color: 'Natural',
-  },
-  // More products...
-]
-const footerNavigation = {
-  products: [
-    { name: 'Bags', href: '#' },
-    { name: 'Tees', href: '#' },
-    { name: 'Objects', href: '#' },
-    { name: 'Home Goods', href: '#' },
-    { name: 'Accessories', href: '#' },
-  ],
-  company: [
-    { name: 'Who we are', href: '#' },
-    { name: 'Sustainability', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Terms & Conditions', href: '#' },
-    { name: 'Privacy', href: '#' },
-  ],
-  customerService: [
-    { name: 'Contact', href: '#' },
-    { name: 'Shipping', href: '#' },
-    { name: 'Returns', href: '#' },
-    { name: 'Warranty', href: '#' },
-    { name: 'Secure Payments', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Find a store', href: '#' },
-  ],
-}
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
