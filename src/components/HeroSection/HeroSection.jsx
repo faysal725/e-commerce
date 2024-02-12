@@ -17,7 +17,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className=" w-full pb-24">
+    <div className=" w-full pb-20">
 
 
       <div className="relative isolate overflow-hidden pt-14">

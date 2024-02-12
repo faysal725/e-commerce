@@ -32,7 +32,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://i.ibb.co/hVqDBq4/repliq2x-logo.png"
                     alt="Your Company"
                   />
                 </div>

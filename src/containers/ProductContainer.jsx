@@ -18,7 +18,7 @@ export default async function ProductContainer() {
                     <Card productDetails={product} key={index}/>
                 ))
             }
-
+            
         </ul>
     </section>
   )
