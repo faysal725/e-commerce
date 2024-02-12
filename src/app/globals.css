@@ -20,6 +20,10 @@ body {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

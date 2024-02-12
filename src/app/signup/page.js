@@ -6,6 +6,7 @@ import Dropdown from '@/components/Inputs/Dropdown'
 import PrimaryBtn from '@/components/Button/PrimaryBtn'
 import Form from '@/components/Form/Form'
 import usePost from '@/hooks/usePosts'
+import CommonLayout from '../commonLayout'
 
 
 export default function Registration() {
@@ -20,28 +21,30 @@ export default function Registration() {
     }
     
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="" >
+    <CommonLayout>
+        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="" >
 
-          <Form title="User Registration" >
-            
-              <label className="block">
-                  <FormInput changedValue={(phone_number) => setUserData({...userData, "phone_number":phone_number })} type="number" label="phone" placeholder="Enter your phone" />
-              </label>
+            <Form title="User Registration" >
+                
+                <label className="block">
+                    <FormInput changedValue={(phone_number) => setUserData({...userData, "phone_number":phone_number })} type="number" label="phone" placeholder="Enter your phone" />
+                </label>
 
-              <label className="block">
-                  <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Enter your password"/>
-              </label>
-              
-              
-              <label className="block">
-                  <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Re-Enter your password"/>
-              </label>
-              
-              <PrimaryBtn clickHandler={() => submitData()} title="Submit" />
-          </Form>
-      </div>
+                <label className="block">
+                    <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Enter your password"/>
+                </label>
+                
+                
+                <label className="block">
+                    <FormInput changedValue={(password) => setUserData({...userData, "password":password })} type="password" label="password" errorMsg={error["password"]} placeholder="Re-Enter your password"/>
+                </label>
+                
+                <PrimaryBtn clickHandler={() => submitData()} title="Submit" />
+            </Form>
+        </div>
 
-    </main>
+        </main>
+    </CommonLayout>
   )
 }
