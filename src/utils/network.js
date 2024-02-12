@@ -1,4 +1,4 @@
-const baseUrl = "https://tasks.vitasoftsolutions.com"
+const baseUrl = "https://fakestoreapi.com"
 
 export const  networkPost = async({method , path ,heads , body }) => {
     //Authorization: `Bearer ${token}`
