@@ -1,4 +1,7 @@
 
+
+
+
 export default function FormInput({type= "text", value= "", placeholder="Input Something", changedValue, label="something", errorMsg=""}) {
 
 
@@ -24,6 +27,10 @@ export default function FormInput({type= "text", value= "", placeholder="Input S
           {
             errorMsg !== "" ? ErrorComponent() : <></>
           }
+
+
+          {/* <CheckIcon className="h-5 w-5 text-black" /> */}
+        
         </div>
       </div>
     )
